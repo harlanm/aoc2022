@@ -3,7 +3,7 @@
 #include <string>
 using namespace std;
 
-int main() {
+int main_d1() {
     std::cout << "Hello World!" << endl;
     ifstream f;
     f.open("d1/test1.txt");

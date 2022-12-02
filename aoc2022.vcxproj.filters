@@ -23,5 +23,16 @@
     <ClCompile Include="d1\d1.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="d2\d2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Xsd Include="d2\test2.txt">
+      <Filter>Header Files</Filter>
+    </Xsd>
   </ItemGroup>
 </Project>
