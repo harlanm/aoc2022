@@ -144,6 +144,7 @@
   <ItemGroup>
     <ClCompile Include="d1\d1.cpp" />
     <ClCompile Include="d2\d2.cpp" />
+    <ClCompile Include="d3\d3.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>

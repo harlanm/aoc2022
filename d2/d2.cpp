@@ -5,7 +5,7 @@ using namespace std;
 
 class d2 {
 public:
-    int main_d2() {
+    int main_d() {
         ifstream f;
         f.open("d2/test1.txt");
         int score = 0;
