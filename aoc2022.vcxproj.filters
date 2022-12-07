@@ -41,6 +41,9 @@
     <ClCompile Include="d6\d6.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="d7\d7.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Xsd Include="d2\test2.txt">
