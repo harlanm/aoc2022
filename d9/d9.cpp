@@ -12,10 +12,10 @@ public:
         f.open("d9/test1.txt");
         string line;
         int size = 1000;
-        int hx = size/2;
-        int hy = size/2;
-        int tx = size/2;
-        int ty = size/2;
+        int x[10] = { size / 2,size / 2,size / 2,size / 2,size / 2,size / 2,size / 2,size / 2,size / 2,size / 2 };
+        int y[10] = { size / 2,size / 2,size / 2,size / 2,size / 2,size / 2,size / 2,size / 2,size / 2,size / 2 };
+        //int tx = size/2;
+        //int ty = size/2;
         vector<vector<int>> array(size, vector<int>(size, 0));
 
         char dir;
@@ -26,60 +26,68 @@ public:
             line.erase(0, line.find(' ') + 1);
             num = stoi(line);
             for (int i = 0; i < num; i++) {
-                if (dir == 'R') {
-                    hx++;
-                    cout << "RIGHT " << hx<<":"<< hy << endl;
-                }
-                if (dir == 'L') {
-                    hx--;
-                    cout << "LEFT " << hx << ":" << hy << endl;
-                }
-                if (dir == 'U') {
-                    hy--;
-                    cout << "UP   " << hx << ":" << hy << endl;
-                }
-                if (dir == 'D') {
-                    hy++;
-                    cout << "DOWN " << hx<<":"<< hy  << endl;
-                }
-                if (hx == tx) {  //same x, just need to maybe adjust y
-                    if (hy - ty > 1) {
-                        ty++;
-                    }
-                    else if (hy - ty < -1) {
-                        ty--;
-                    }
-                }
-                else if (hy == ty) {  //same y, just need to maybe adjust x
-                    if (hx - tx > 1) {
-                        tx++;
-                    }
-                    else if (hx - tx < -1) {
-                        tx--;
-                    }
-                }
-                else {  //diagonal case
-                    if (abs(hx - tx) <= 1 && abs(hy - ty) <= 1) {
-                        //do nothing
-                    }
-                    else {  //must update both x and y, can consider independently
-                        if (hx > tx) {
-                            tx++;
+                for (int k = 0; k < 10; k++) {
+                    if (k == 0) {
+                        if (dir == 'R') {
+                            x[0]++;
+                            cout << "RIGHT " << x[k] << ":" << y[k] << endl;
                         }
-                        else {
-                            tx--;
+                        if (dir == 'L') {
+                            x[0]--;
+                            cout << "LEFT " << x[k] << ":" << y[k] << endl;
                         }
-                        if (hy > ty) {
-                            ty++;
+                        if (dir == 'U') {
+                            y[0]--;
+                            cout << "UP   " << x[k] << ":" << y[k] << endl;
                         }
-                        else {
-                            ty--;
+                        if (dir == 'D') {
+                            y[0]++;
+                            cout << "DOWN " << x[k] << ":" << y[k] << endl;
                         }
                     }
+                    else {
+                        if (x[k-1] == x[k]) {  //same x, just need to maybe adjust y
+                            if (y[k-1] - y[k] > 1) {
+                                y[k]++;
+                            }
+                            else if (y[k-1] - y[k] < -1) {
+                                y[k]--;
+                            }
+                        }
+                        else if (y[k-1] == y[k]) {  //same y, just need to maybe adjust x
+                            if (x[k-1] - x[k] > 1) {
+                                x[k]++;
+                            }
+                            else if (x[k-1] - x[k] < -1) {
+                                x[k]--;
+                            }
+                        }
+                        else {  //diagonal case
+                            if (abs(x[k-1] - x[k]) <= 1 && abs(y[k-1] - y[k]) <= 1) {
+                                //do nothing
+                            }
+                            else {  //must update both x and y, can consider independently
+                                if (x[k-1] > x[k]) {
+                                    x[k]++;
+                                }
+                                else {
+                                    x[k]--;
+                                }
+                                if (y[k-1] > y[k]) {
+                                    y[k]++;
+                                }
+                                else {
+                                    y[k]--;
+                                }
+                            }
 
+                        }
+                        cout << "TAIL" << k << " "<< x[k] << ":" << y[k] << endl;
+                        if (k == 9) {
+                            array[x[k]][y[k]] = 1;
+                        }
+                    }
                 }
-                cout << "TAIL " << tx << ":" << ty << endl;
-                array[tx][ty] = 1;
             }
 
         }
