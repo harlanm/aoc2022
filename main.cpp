@@ -6,9 +6,10 @@
 //#include "d6/d6.cpp" 
 #include "d7/d7.cpp"
 #include "d8/d8.cpp"
+#include "d9/d9.cpp"
 using namespace std;
 
 int main() {
-	d8 day;
+	d9 day;
 	return day.main_d();
 }

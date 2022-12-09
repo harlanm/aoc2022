@@ -150,6 +150,7 @@
     <ClCompile Include="d6\d6.cpp" />
     <ClCompile Include="d7\d7.cpp" />
     <ClCompile Include="d8\d8.cpp" />
+    <ClCompile Include="d9\d9.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
