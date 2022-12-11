@@ -25,8 +25,8 @@ public:
         name = n;
     }
 
-    void addChild(Thing t) {
-        children.push_back(t);
+    void addChild(Thing** t) {
+        children.push_back(**t);
     }
 
     int getSize() {
@@ -66,7 +66,8 @@ public:
                         dirs.push(tmp);
                         line.erase(0, 5);
                         tmp = Thing(line);
-                        dirs.top().addChild(tmp);
+                        Thing* thingptr = &tmp;
+                        dirs.top().addChild(&thingptr);
                         cout << "ADDED DIR: " << tmp.name <<" TO DIR: " << dirs.top().name << endl;
                         cout << "has size" << dirs.top().children.size() << endl;
                     }
@@ -88,7 +89,8 @@ public:
                     line.erase(0, line.find(' ') + 1);
                     name = line;
                     file = Thing(name, size);
-                    tmp.addChild(file);
+                    Thing* fileptr = &tmp;
+                    tmp.addChild(&fileptr);
                     cout << "ADDED FILE: " << file.name <<" TO DIR: " <<tmp.name<< endl;
                     cout << "has size" << tmp.children.size() << endl;
                 }

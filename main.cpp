@@ -10,6 +10,6 @@
 using namespace std;
 
 int main() {
-	d9 day;
+	d7 day;
 	return day.main_d();
 }
