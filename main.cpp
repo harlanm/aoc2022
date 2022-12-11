@@ -7,9 +7,10 @@
 #include "d7/d7.cpp"
 #include "d8/d8.cpp"
 #include "d9/d9.cpp"
+#include "d10/d10.cpp"
 using namespace std;
 
 int main() {
-	d7 day;
+	d10 day;
 	return day.main_d();
 }
