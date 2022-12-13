@@ -10,9 +10,10 @@
 //#include "d10/d10.cpp"
 #include "d11/d11.cpp"
 #include "d12/d12.cpp"
+#include "d13/d13.cpp"
 using namespace std;
 
 int main() {
-	d12 day;
+	d13 day;
 	return day.main_d();
 }
