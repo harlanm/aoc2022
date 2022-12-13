@@ -143,6 +143,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="d10\d10.cpp" />
+    <ClCompile Include="d11\d11.cpp" />
     <ClCompile Include="d1\d1.cpp" />
     <ClCompile Include="d2\d2.cpp" />
     <ClCompile Include="d3\d3.cpp" />
