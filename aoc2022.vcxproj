@@ -148,6 +148,7 @@
     <ClCompile Include="d13\d13.cpp" />
     <ClCompile Include="d14\d14.cpp" />
     <ClCompile Include="d15\d15.cpp" />
+    <ClCompile Include="d16\d16.cpp" />
     <ClCompile Include="d1\d1.cpp" />
     <ClCompile Include="d2\d2.cpp" />
     <ClCompile Include="d3\d3.cpp" />
