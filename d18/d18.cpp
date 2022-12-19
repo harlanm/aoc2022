@@ -13,11 +13,6 @@
 #include <utility>
 #include <cassert>
 using namespace std;
-using ll = int64_t;
-using pll = pair<ll, ll>;
-
-
-//NGL, heavily leverages @jonathanpaulson
 
 class d18 {
 public:
