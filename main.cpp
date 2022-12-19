@@ -15,9 +15,10 @@
 #include "d15/d15.cpp"
 #include "d16/d16.cpp"
 #include "d17/d17.cpp"
+#include "d18/d18.cpp"
 using namespace std;
 
 int main() {
-	d17 day;
+	d18 day;
 	return day.main_d();
 }
