@@ -154,6 +154,7 @@
     <ClCompile Include="d19\d19.cpp" />
     <ClCompile Include="d1\d1.cpp" />
     <ClCompile Include="d20\d20.cpp" />
+    <ClCompile Include="d21\d21.cpp" />
     <ClCompile Include="d2\d2.cpp" />
     <ClCompile Include="d3\d3.cpp" />
     <ClCompile Include="d4\d4.cpp" />

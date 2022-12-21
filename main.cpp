@@ -12,15 +12,16 @@
 //#include "d12/d12.cpp"
 //#include "d13/d13.cpp"
 //#include "d14/d14.cpp"
-#include "d15/d15.cpp"
-#include "d16/d16.cpp"
-#include "d17/d17.cpp"
-#include "d18/d18.cpp"
-#include "d19/d19.cpp"
-#include "d20/d20.cpp"
+//#include "d15/d15.cpp"
+//#include "d16/d16.cpp"
+//#include "d17/d17.cpp"
+//#include "d18/d18.cpp"
+//#include "d19/d19.cpp"
+//#include "d20/d20.cpp"
+#include "d21/d21.cpp"
 using namespace std;
 
 int main() {
-	d20 day;
+	d21 day;
 	return day.main_d();
 }
