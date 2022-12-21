@@ -19,6 +19,10 @@
 //#include "d19/d19.cpp"
 //#include "d20/d20.cpp"
 #include "d21/d21.cpp"
+#include "d22/d22.cpp"
+#include "d23/d23.cpp"
+#include "d24/d24.cpp"
+#include "d25/d25.cpp"
 using namespace std;
 
 int main() {

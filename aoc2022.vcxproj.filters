@@ -86,6 +86,18 @@
     <ClCompile Include="d21\d21.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="d25\d25.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="d24\d24.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="d23\d23.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="d22\d22.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Xsd Include="d2\test2.txt">
