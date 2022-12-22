@@ -26,6 +26,6 @@
 using namespace std;
 
 int main() {
-	d21 day;
+	d22 day;
 	return day.main_d();
 }
